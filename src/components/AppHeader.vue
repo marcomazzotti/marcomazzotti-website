@@ -5,8 +5,8 @@ export default {
 </script>
 
 <template>
-  <div class="container">
-    <div class="header d-flex align-items-center justify-content-between">
+  <div class="header">
+    <div class="container d-flex align-items-center justify-content-between">
       <div class="img-container d-flex">
         <!-- <img src="" alt="Immagine di prova"> -->
         <h5 class="mx-4"><a href="">MARCO MAZZOTTI</a></h5>
@@ -33,6 +33,11 @@ export default {
 
 <style lang="scss" scoped>
 @use "../styles/general.scss" as *;
+
+.header {
+  position: fixed;
+  width: 100%;
+}
 
 h5:hover {
   color: rgb(118, 194, 175);
