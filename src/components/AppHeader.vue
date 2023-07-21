@@ -9,7 +9,7 @@ export default {
     <div class="container d-flex align-items-center justify-content-between">
       <div class="img-container d-flex">
         <!-- <img src="" alt="Immagine di prova"> -->
-        <h5 class="mx-4"><a href="">MARCO MAZZOTTI</a></h5>
+        <h5><a href="">MARCO MAZZOTTI</a></h5>
       </div>
       <div class="right-header pt-3">
         <ul class="d-flex list-unstyled align-items-center justify-content-center">
@@ -37,6 +37,7 @@ export default {
 .header {
   position: fixed;
   width: 100%;
+  background-color: white;
 }
 
 h5:hover {
