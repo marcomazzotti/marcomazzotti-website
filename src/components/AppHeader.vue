@@ -6,31 +6,23 @@ export default {
 
 <template>
   <div class="header py-2">
-    <div class="container d-flex justify-content-between">
+    <div class="container d-flex justify-content-between align-items-center">
       <div class="logo">
         <h1><strong>M</strong></h1>
       </div>
       <div class="menu">
         <ul class="list-unstyled d-flex">
-          <li class="me-5">
-            <h6>
-              <a href="">HOME</a>
-            </h6>
+          <li class="me-3">
+            <a href="">HOME</a>
           </li>
-          <li class="me-5">
-            <h6>
-              <a href="">PROJECTS</a>
-            </h6>
+          <li class="me-3">
+            <a href="">PROJECTS</a>
           </li>
-          <li class="me-5">
-            <h6>
-              <a href="">ABOUT</a>
-            </h6>
+          <li class="me-3">
+            <a href="">ABOUT</a>
           </li>
           <li>
-            <h6>
-              <a href="">CONTACT</a>
-            </h6>
+            <a href="">CONTACT</a>
           </li>
         </ul>
       </div>
@@ -43,20 +35,20 @@ export default {
 
 .header {
   border-bottom: 2px solid red;
-  min-height: 60px;
 
   ul {
-    padding-top: 0.8rem;
+    margin: 0;
 
     a {
-      padding: 0.5rem;
+      padding: 0.5rem 0.9rem;
       transition: background-color 0.3s, color 0.3s;
+      border-radius: 10px;
+      font-size: 1.1rem;
     }
 
     a:hover {
       color: white;
       background-color: black;
-      padding: 0.5rem;
     }
   }
 }
