@@ -43,9 +43,21 @@ export default {
 
 .header {
   border-bottom: 2px solid red;
+  min-height: 60px;
 
   ul {
     padding-top: 0.8rem;
+
+    a {
+      padding: 0.5rem;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    a:hover {
+      color: white;
+      background-color: black;
+      padding: 0.5rem;
+    }
   }
 }
 </style>
