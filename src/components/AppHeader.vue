@@ -5,25 +5,32 @@ export default {
 </script>
 
 <template>
-  <div class="header">
-    <div class="container d-flex align-items-center justify-content-between">
-      <div class="img-container d-flex">
-        <!-- <img src="" alt="Immagine di prova"> -->
-        <h5><a href="">MARCO MAZZOTTI</a></h5>
+  <div class="header py-2">
+    <div class="container d-flex justify-content-between">
+      <div class="logo">
+        <h1><strong>M</strong></h1>
       </div>
-      <div class="right-header pt-3">
-        <ul class="d-flex list-unstyled align-items-center justify-content-center">
-          <li class="mx-4">
-            <h5><a href="">HOME</a></h5>
+      <div class="menu">
+        <ul class="list-unstyled d-flex">
+          <li class="me-5">
+            <h6>
+              <a href="">HOME</a>
+            </h6>
           </li>
-          <li class="mx-4">
-            <h5><a href="">ABOUT</a></h5>
+          <li class="me-5">
+            <h6>
+              <a href="">PROJECTS</a>
+            </h6>
           </li>
-          <li class="mx-4">
-            <h5><a href="">PROJECTS</a></h5>
+          <li class="me-5">
+            <h6>
+              <a href="">ABOUT</a>
+            </h6>
           </li>
-          <li class="mx-4">
-            <h5><a href="">CONTACT</a></h5>
+          <li>
+            <h6>
+              <a href="">CONTACT</a>
+            </h6>
           </li>
         </ul>
       </div>
@@ -35,12 +42,10 @@ export default {
 @use "../styles/general.scss" as *;
 
 .header {
-  position: fixed;
-  width: 100%;
-  background-color: white;
-}
+  border-bottom: 2px solid red;
 
-h5:hover {
-  color: rgb(118, 194, 175);
+  ul {
+    padding-top: 0.8rem;
+  }
 }
 </style>
