@@ -16,10 +16,10 @@ export default {
             <a href="">HOME</a>
           </li>
           <li class="me-3">
-            <a href="">PROJECTS</a>
+            <a href="">ABOUT</a>
           </li>
           <li class="me-3">
-            <a href="">ABOUT</a>
+            <a href="">PROJECTS</a>
           </li>
           <li>
             <a href="">CONTACT</a>
@@ -35,6 +35,10 @@ export default {
 
 .header {
   border-bottom: 2px solid red;
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  background-color: white;
 
   ul {
     margin: 0;

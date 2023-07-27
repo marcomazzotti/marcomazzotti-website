@@ -24,11 +24,11 @@ export default {
 @use "../styles/general.scss" as *;
 
 .container {
-
   border-bottom: 1px solid red;
 
   .right {
     width: 50%;
+    margin-top: 5rem;
 
     p {
       font-size: 1.2rem;
@@ -37,6 +37,7 @@ export default {
 
   .left {
     width: 50%;
+    margin-top: 5rem;
 
     h1 {
       font-size: 5rem;
