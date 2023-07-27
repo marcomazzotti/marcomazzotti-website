@@ -1,6 +1,24 @@
 <script>
 export default {
-  name: "AppHeader"
+  name: "AppHeader",
+  data() {
+    return {
+      menuList: [
+        {
+          name: "HOME"
+        },
+        {
+          name: "ABOUT"
+        },
+        {
+          name: "PROJECTS"
+        },
+        {
+          name: "CONTACT"
+        }
+      ]
+    }
+  }
 }
 </script>
 
@@ -12,17 +30,8 @@ export default {
       </div>
       <div class="menu">
         <ul class="list-unstyled d-flex">
-          <li class="me-3">
-            <a href="">HOME</a>
-          </li>
-          <li class="me-3">
-            <a href="">ABOUT</a>
-          </li>
-          <li class="me-3">
-            <a href="">PROJECTS</a>
-          </li>
-          <li>
-            <a href="">CONTACT</a>
+          <li v-for="(item, index) in menuList" :key="index" :class="{ 'me-3': index < menuList.length - 1 }">
+            <a href="">{{ item.name }}</a>
           </li>
         </ul>
       </div>
