@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <div class="container my-5 d-flex align-items-center">
+  <div class="container py-5 d-flex align-items-center">
     <div class="left me-5">
       <h1>Hello! I'm Marco and this is my website!</h1>
     </div>
@@ -23,31 +23,34 @@ export default {
 <style lang="scss" scoped>
 @use "../styles/general.scss" as *;
 
-.right {
-  width: 50%;
-}
+.container {
 
-.left {
-  width: 50%;
+  border-bottom: 1px solid red;
 
-  h1 {
-    font-size: 5rem;
+  .right {
+    width: 50%;
+
+    p {
+      font-size: 1.2rem;
+    }
   }
-}
 
-.right {
-  p {
-    font-size: 1.2rem;
+  .left {
+    width: 50%;
+
+    h1 {
+      font-size: 5rem;
+    }
   }
-}
 
-.btn {
-  border: 1px solid black !important;
-  --bs-btn-bg: black;
+  .btn {
+    border: 1px solid black !important;
+    --bs-btn-bg: black;
 
-  &:hover {
-    --bs-btn-hover-bg: white !important;
-    --bs-btn-hover-color: black !important;
+    &:hover {
+      --bs-btn-hover-bg: white !important;
+      --bs-btn-hover-color: black !important;
+    }
   }
 }
 </style>
