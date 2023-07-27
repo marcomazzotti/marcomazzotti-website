@@ -51,8 +51,6 @@ export default {
   img {
     max-width: 40%;
     border-radius: 50%;
-    position: relative;
-
   }
 }
 
