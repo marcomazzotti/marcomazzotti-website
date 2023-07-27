@@ -34,7 +34,6 @@ export default {
 .left {
   width: 50%;
   background-color: black;
-  color: white;
   padding: 4rem 3rem;
   border-radius: 10px;
   margin-top: 1.5rem;
@@ -42,6 +41,7 @@ export default {
 
   p {
     font-size: 1.1rem;
+    color: white;
   }
 
   .img-container {
