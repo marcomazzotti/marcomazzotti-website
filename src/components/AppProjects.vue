@@ -1,6 +1,5 @@
 <script>
 export default {
-  components: { VueperSlides, VueperSlide },
   name: "AppProjects",
   data() {
     return {
