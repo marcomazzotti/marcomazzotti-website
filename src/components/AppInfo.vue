@@ -5,6 +5,7 @@ export default {
 </script>
 
 <template>
+  <span id="about"></span>
   <div class="container py-5 d-flex align-items-center">
     <div class="left me-5">
       <div class="img-container pb-5">

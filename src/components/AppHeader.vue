@@ -5,16 +5,20 @@ export default {
     return {
       menuList: [
         {
-          name: "HOME"
+          name: "HOME",
+          id: "home"
         },
         {
-          name: "ABOUT"
+          name: "ABOUT",
+          id: "about"
         },
         {
-          name: "PROJECTS"
+          name: "PROJECTS",
+          id: "projects"
         },
         {
-          name: "CONTACT"
+          name: "CONTACT",
+          id: "contact"
         }
       ]
     }
@@ -31,7 +35,7 @@ export default {
       <div class="menu">
         <ul class="list-unstyled d-flex">
           <li v-for="(item, index) in menuList" :key="index" :class="{ 'me-3': index < menuList.length - 1 }">
-            <a href="">{{ item.name }}</a>
+            <a :href="`#${item.id}`">{{ item.name }}</a>
           </li>
         </ul>
       </div>
