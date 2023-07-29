@@ -12,7 +12,7 @@ export default {
     </div>
     <div class="right ms-5">
       <p class="">Welcome to my website portfolio! <br>
-        My name is Marco, and I am a Junior Full Stack Web Developer. <br>
+        My name is Marco and I am a Junior Full Stack Web Developer. <br>
         Here you can find my projects and my personal resume. <br>
         Thank you for visiting, and have a great day!
       </p>

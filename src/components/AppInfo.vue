@@ -9,7 +9,7 @@ export default {
   <div class="container py-5 d-flex align-items-center">
     <div class="left me-5">
       <div class="img-container pb-5">
-        <img src="../assets/Foto Social.jpeg" alt="">
+        <img src="../assets/foto-social.jpeg" alt="">
       </div>
       <p class="px-4">Hi there, my name is Marco and I live in Milan, Italy. <br>
         I studied graphic design, but over the last few years, I developed an interest in the world of web development.
