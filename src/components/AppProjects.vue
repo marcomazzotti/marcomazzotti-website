@@ -6,6 +6,10 @@ export default {
   data() {
     return {
       slides: [
+        "/src/assets/Deliveroo.png",
+        "/src/assets/Whatsapp.png",
+        "/src/assets/Netflix.png",
+        "/src/assets/Discord.png"
         // "/src/assets/1690820566206.jpeg",
         // "/src/assets/Whatsapp.jpeg",
         // "/src/assets/netflix.jpeg",
@@ -50,8 +54,9 @@ export default {
     <carousel @next="next" @prev="prev">
       <carousel-slide v-for="(slide, index) in slides" :key="slide" :index="index" :visibleSlide="visibleSlide"
         :direction="direction">
-        <img :src="slide" alt=""
-          style="{ objectFit: 'cover', width: '100%', height: '100%', display: 'inline-block', vertical-align: 'middle' }">
+        <div class="carousel-image-container">
+          <img :src="slide" alt="" style="width: 100%;">
+        </div>
       </carousel-slide>
     </carousel>
   </div>
