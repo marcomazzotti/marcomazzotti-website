@@ -21,8 +21,8 @@ export default {
   <div class="carousel">
     <slot></slot>
 
-    <button class="next" @click="next">Next</button>
-    <button class="prev" @click="prev">Prev</button>
+    <button href="" class="next" @click="next"><i class="fa-solid fa-arrow-right"></i></button>
+    <button href="" class="prev" @click="prev"><i class="fa-solid fa-arrow-left"></i></button>
   </div>
 </template>
 
@@ -40,24 +40,36 @@ export default {
 
   button {
     position: absolute;
-    height: 40px;
-    width: 50px;
     top: calc(50% - 20px);
-    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 1.5rem;
+    background-color: black;
+    padding: 0.5rem;
     border: none;
-    color: white;
+    border-radius: 5px;
+
+    i {
+      color: white;
+    }
   }
 
   button:hover {
     cursor: pointer;
+    background-color: white;
+    border: 1px solid black;
+
+    i {
+      color: black;
+    }
   }
 
   .next {
-    right: 0;
+    right: 16px;
+    margin-right: 0.5rem;
   }
 
   .prev {
-    left: 0;
+    left: 16px;
+    margin-left: 0.5rem;
   }
 }
 </style>
