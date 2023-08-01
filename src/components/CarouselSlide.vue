@@ -28,6 +28,7 @@ export default {
   left: 0;
   bottom: 0;
   padding: 1rem;
+  border-radius: 100px;
 }
 
 .left-enter-active {

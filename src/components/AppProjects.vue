@@ -6,14 +6,22 @@ export default {
   data() {
     return {
       slides: [
-        "/src/assets/Deliveroo.png",
-        "/src/assets/Whatsapp.png",
-        "/src/assets/Netflix.png",
-        "/src/assets/Discord.png"
-        // "/src/assets/1690820566206.jpeg",
-        // "/src/assets/Whatsapp.jpeg",
-        // "/src/assets/netflix.jpeg",
-        // "/src/assets/spotify.jpeg",
+        {
+          name: "Deliveroo",
+          image: "/src/assets/Deliveroo.png",
+        },
+        {
+          name: "Whatsapp",
+          image: "/src/assets/Whatsapp.png",
+        },
+        {
+          name: "Netflix",
+          image: "/src/assets/Netflix.png",
+        },
+        {
+          name: "Discord",
+          image: "/src/assets/Discord.png"
+        },
       ],
       visibleSlide: 0,
       direction: ""
@@ -50,14 +58,15 @@ export default {
 
 <template>
   <div class="container py-5 text-center">
-    <h2 class="pb-3"><strong>PROJECTS</strong></h2>
+    <h2 class="pb-5"><strong>PROJECTS</strong></h2>
     <carousel @next="next" @prev="prev">
       <carousel-slide v-for="(slide, index) in slides" :key="slide" :index="index" :visibleSlide="visibleSlide"
         :direction="direction">
         <div class="carousel-image-container">
-          <img :src="slide" alt="" style="width: 100%">
+          <img :src="slide.image" alt="" style="width: 100%; border-radius: 10px; object-fit: contain;">
         </div>
       </carousel-slide>
+
     </carousel>
   </div>
 </template>
@@ -75,9 +84,11 @@ export default {
 
 .carousel-slide {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100%;
+  border-radius: 100px;
 }
 
 .carousel-image-container {

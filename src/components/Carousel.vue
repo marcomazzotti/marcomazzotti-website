@@ -36,6 +36,7 @@ export default {
   overflow: hidden;
   margin: 0 auto;
   border: 1px solid black;
+  border-radius: 10px;
 
   button {
     position: absolute;
