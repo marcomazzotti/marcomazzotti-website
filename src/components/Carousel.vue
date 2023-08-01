@@ -31,10 +31,11 @@ export default {
 
 .carousel {
   position: relative;
-  width: 800px;
-  height: 550px;
+  width: 900px;
+  height: 500px;
   overflow: hidden;
   margin: 0 auto;
+  border: 1px solid black;
 
   button {
     position: absolute;

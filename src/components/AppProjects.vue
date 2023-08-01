@@ -49,13 +49,13 @@ export default {
 </script>
 
 <template>
-  <div class="container pt-5 text-center">
-    <h2><strong>PROJECTS</strong></h2>
+  <div class="container py-5 text-center">
+    <h2 class="pb-3"><strong>PROJECTS</strong></h2>
     <carousel @next="next" @prev="prev">
       <carousel-slide v-for="(slide, index) in slides" :key="slide" :index="index" :visibleSlide="visibleSlide"
         :direction="direction">
         <div class="carousel-image-container">
-          <img :src="slide" alt="" style="width: 100%;">
+          <img :src="slide" alt="" style="width: 100%">
         </div>
       </carousel-slide>
     </carousel>
@@ -71,5 +71,17 @@ export default {
   h2 {
     font-size: 2rem;
   }
+}
+
+.carousel-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.carousel-image-container {
+  max-width: 100%;
+  max-height: 100%;
 }
 </style>
