@@ -57,7 +57,7 @@ export default {
 </script>
 
 <template>
-  <div class="container py-5 text-center">
+  <div class="container py-5 text-center" id="projects">
     <h2 class="pb-5"><strong>PROJECTS</strong></h2>
     <carousel @next="next" @prev="prev">
       <carousel-slide v-for="(slide, index) in slides" :key="slide" :index="index" :visibleSlide="visibleSlide"
